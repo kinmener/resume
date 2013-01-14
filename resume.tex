@@ -1,0 +1,303 @@
+\documentclass[11pt, letterpaper]{article}
+\usepackage{graphicx}
+
+\usepackage{ifpdf}
+\ifpdf
+\setlength{\pdfpagewidth}{8.5in}
+\setlength{\pdfpageheight}{11in}
+\else
+\fi
+
+\usepackage{url}
+
+\usepackage[T1]{fontenc}
+\usepackage{pslatex}
+
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+
+\hyphenpenalty=10000
+\tolerance=2000
+
+\setlength{\textwidth}{6.5in}
+\setlength{\oddsidemargin}{0in}
+\setlength{\evensidemargin}{0in}
+\setlength{\topmargin}{0in}
+\setlength{\parindent}{0in}
+\setlength{\parskip}{0.05in}
+\setlength{\itemsep}{\parskip}
+\setlength{\partopsep}{0in}
+\setlength{\topsep}{0in}
+\setlength{\voffset}{-0.5in}
+\setlength{\headsep}{0.1in}
+\setlength{\textheight}{10in}
+
+\setlength{\headwidth}{\textwidth}
+\renewcommand{\headrulewidth}{0.4mm}
+\renewcommand{\footrulewidth}{0mm}
+\renewcommand{\headrule}{
+  \hrule width\headwidth height\headrulewidth \vskip-\headrulewidth
+}
+
+\newlength{\firstoffset}
+\setlength{\firstoffset}{0.8in}
+\newlength{\otherheadheight}
+\setlength{\otherheadheight}{0.5in}
+
+\fancypagestyle{first}{%
+  \setlength{\headheight}{\otherheadheight}
+  \addtolength{\headheight}{\firstoffset}
+  \fancyhf{}
+  \fancyhead[C]{%
+    \textnormal{\Large \bf Wei-Lun Hung}\\[0.1in]
+    %\includegraphics[height=0.25in]{lin}
+    %\includegraphics[height=0.25in]{hsuan}
+    %\includegraphics[height=0.25in]{tien}\\
+    3517 North Hills Drive \myright    +1(512)217-7671\\
+    Apt.~W102    \myright    \url{wlhung@mail.utexas.edu}\\
+    Austin, TX  78731             \myright    \url{http://www.csie.ntu.edu.tw/~b91076}%
+  }%
+}
+
+\fancypagestyle{other}{%
+  \setlength{\headheight}{\otherheadheight}
+  \fancyhf{}
+  \fancyhead[L]{Wei-Lun Hung	}
+  %\fancyhead[R]{Curriculum Vitae, page \thepage\ of \pageref{LastPage}}
+   \fancyhead[R]{Resume, page \thepage\ of \pageref{LastPage}}
+}
+
+\pagestyle{other}
+
+\newcommand{\ignore}[1]{#1}
+
+{\makeatletter\gdef\reallynopagebreak{\par\nopagebreak\@nobreaktrue}}
+
+\newcommand{\myscitem}[1]{\vspace{0.5\baselineskip} {\Large \textbf{\textsc{#1}} \reallynopagebreak}}
+\newcommand{\mydate}[1]{{\small #1}}
+\newcommand{\myname}[1]{{\bf #1}}
+\newcommand{\myright}{\hspace*\fill}
+\newcommand{\myrightdate}[1]{\myright \mydate{#1}}
+
+\newenvironment{myexp}{
+  \begin{list}{}{
+      \setlength{\itemindent}{-0.15in}
+      \setlength{\leftmargin}{0.3in}
+      \addtolength{\topsep}{-0.1in}
+    }
+}{\end{list}}
+
+\newenvironment{myitemize}{
+  \begin{list}{\labelitemi}{
+      \setlength{\itemindent}{0in}
+      \setlength{\leftmargin}{0.3in}
+      \addtolength{\topsep}{-0.1in}
+    }
+}{\end{list}}
+
+\newenvironment{myenumerate}{
+  \begin{list}{[\arabic{enumi}]}{
+      \usecounter{enumi}
+      \setlength{\itemindent}{0in}
+      \setlength{\leftmargin}{0.3in}
+      \addtolength{\topsep}{-0.1in}
+    }
+}{\end{list}}
+
+\newenvironment{mybullet}{
+  \begin{list}{\labelitemi}{
+      \setlength{\itemindent}{0in}
+      \setlength{\leftmargin}{0.15in}
+      \setlength{\topsep}{0.02in}
+      \setlength{\partopsep}{0pt}
+    }
+}{\end{list}}
+
+\newcommand{\textsmall}[1]{{\small #1}}
+
+\begin{document}
+
+\thispagestyle{first}
+\enlargethispage*{-\firstoffset}
+
+\myscitem{Education}
+\begin{myexp}
+\item \textbf{The University of Texas at Austin}, USA \\
+ PhD student, Electrical and Computer Engineering  \myrightdate{August 2010 -- Present}
+\item \textbf{National Taiwan University}, Taipei, Taiwan\\
+  Master of Science, Electronics Engineering \myrightdate{June 2008}
+  
+   \begin{myexp}
+   \item Thesis: ``Inductive Equivalence Checking and Relation Determinization via SAT Solving''
+   \item Overall GPA: 4.0/4.0 (33 credits)
+ % \item  \textit{Member of the ALCom Lab; Advisor: Professor  Jie-Hong Roland Jiang}
+   \end{myexp}
+  Bachelor of Science, Computer Science and Information Engineering \myrightdate{ June 2006}
+  
+   \begin{mybullet}
+   \item Overall GPA: 3.64/4.0 (156 credits)
+   \item Last 2-year GPA: 3.89/4.0 (64 credits)
+   \end{mybullet}
+\end{myexp}
+
+\myscitem{Research Interests}
+\begin{myexp}
+   \item Formal Verification
+   \item Computer-Aided Design for VLSI
+\end{myexp}
+
+\myscitem{Research Experience}
+
+\begin{myexp}
+\item \textbf{National Taiwan University}, Taipei, Taiwan \\
+ \myrightdate{September 2006 -- June 2008} \\
+ {\bf Research Assistant to Professor Jie-Hong Roland Jiang }
+ \myrightdate{July 2009 -- July 2010}
+
+  \begin{myexp}
+    \item Quantified Boolean formula (QBF) Solver
+     \begin{mybullet}
+    \item Designed and implemented the AIG-based QBF solver
+    \item Compared performances with prior QBF solvers
+    \item Taught graduate students programming tools
+    \item Sponsored by the National Science Council, Taiwan
+    \end{mybullet}
+    
+     \item Relation Determinization
+    %Boolean relations are an important tool in system synthesis and verification. They can characterize solutions to a set of Boolean constraints. However, for hardware implement of a system, a deterministic function often has to be extracted from a relation. Prior methods focused on function optimization but were unlikely to handle large problem instances. We focused on scalability with reasonable optimization quality. The results showed that Boolean relations with thousands of variables can be determinized inexpensively using Craig Interpolation. With such extended capacity, we would anticipate real-world applications. Published in the {\it IEEE/ACM International Conference on Computer-Aided Design (ICCAD'09)}.
+    \begin{mybullet}
+    \item Designed and implemented the SAT-based algorithm to extract functions from relation
+    \item Prepared real state transition relation benchmark circuits
+    \item Published in the {\it IEEE/ACM International Conference on Computer-Aided Design (ICCAD'09)}
+    \end{mybullet}
+    
+    \item Boolean Function Bi-Decomposition
+    %Boolean function bi-decomposition is a fundamental operation in logic synthesis. Finding such decomposition reduces circuit complexity and yields simple physical design solutions. Prior methods may not be able to decompose large functions. We proposed a novel solution to these difficulties using Craig Interpolation and SAT Solving. The experiments showed promising results on the scalability of bi-decomposition. Thereby the capacity of bi-decomposition can be much extended for large functions. Published in the {\it Design Automation Conference (DAC'08)}.
+    \begin{mybullet}
+    \item Implemented the algorithm of computing Craig Interpolant
+    \item Evaluated the scalability of bi-decomposition and the optimality of variable partition
+    \item Published in the {\it Design Automation Conference (DAC'08)}
+    \end{mybullet}
+   
+    
+    \item Sequential Circuit Verification
+    %Retiming and resynthesis are among the most important techniques for practical sequential circuit optimization. However, their applicability is much limited due to verification concerns. To overcome this bottleneck, we studied both the theoretical and practical aspects of inductive verification on the equivalence between circuits under retiming and resynthesis transformation. Through the study of its completeness condition, we extended the verification capability and capacity. Our results overcome part of the verification bottleneck in logic synthesis. Published in the {\it IEEE/ACM International Conference on Computer-Aided Design (ICCAD'07)}.
+    \begin{mybullet}
+    \item Designed and implemented the SAT-based inductive equivalence checking algorithm
+    \item Compared performances with prior BDD-based method and temporal induction method
+    \item Published in the {\it IEEE/ACM International Conference on Computer-Aided Design (ICCAD'07)}\\
+    \end{mybullet}
+    
+  \end{myexp}
+
+  {\bf Undergraduate Research Assistant to Professor Yi-Ping Hung }  \myrightdate{July 2005 -- June 2006} 
+  
+  \begin{myexp}
+      \item Human-Computer Interaction
+        \begin{mybullet}
+        \item Developed an authoring tool in multimedia for 3D stereoscopic kiosk systems
+        \item Integrated 3D stereoscopic kiosk systems with RFID and wireless access points
+        \item Sponsored by the National Digital Archives Program, Taiwan
+        \end{mybullet}
+   \end{myexp}
+\end{myexp}
+
+
+
+
+\newpage
+\myscitem{Work Experience}
+\begin{myexp}
+   \item \textbf{Taiwan Coast Guard}, Taipei, Taiwan \myrightdate{December 2008 -- June 2009} \\
+   {\bf IT Officer (Second Lieutenant)}
+   \begin{mybullet}
+      \item Led a team (5 people) to design and develop the system for officers in duty to manage information
+      \item Maintained the system to manage real estate information
+   \end{mybullet}
+   \item \textbf{Computer and Information Networking Center}, National Taiwan University  \myrightdate{March 2005 -- June 2008} \\
+   {\bf Website Developer}
+   \begin{mybullet}
+      \item Designed and built the prototype of a platform for students to match job needs and requirements
+      \item Maintained many websites for students and faculty to manage their information
+   \end{mybullet}
+   \item \textbf{ALCom Lab}, National Taiwan University  \myrightdate{July 2006 -- June 2007}\\
+   {\bf Server Administrator}
+   \begin{mybullet}
+      \item Maintained web servers and database services
+      \item Maintained workstations
+   \end{mybullet}
+\end{myexp}
+
+\myscitem{Publications}
+
+\begin{myenumerate}
+\item J.-H.~R.~Jiang, H.-P.~Lin and  \myname{W.-L. Hung}.
+  ``Interpolating functions from large Boolean relations.''
+  {\it  IEEE/ACM International Conference on Computer-Aided Design (ICCAD)},  Nov.~2009.
+\item R.-R.~Lee, J.-H.~R.~Jiang and \myname{W.-L. Hung}.
+  ``Bi-decomposing large Boolean functions via interpolation and satisfiability solving.''
+  {\it Design Automation Conference (DAC)}, pages 636--641, June 2008.
+\item J.-H.~R.~Jiang and \myname{W.-L. Hung}.
+  ``Inductive equivalence checking under retiming and resynthesis.''
+  {\it IEEE/ACM International Conference on Computer-Aided Design (ICCAD)},
+  pages 326--333, Nov.~2007.
+\end{myenumerate}
+
+
+\myscitem{Academic Records}
+\begin{myexp}
+	\item \textbf{Presentation}
+	  \begin{mybullet}
+             \item  Interpolating functions from large Boolean relations. Contributed paper, ICCAD, San Jose, CA, November 2009.
+          \end{mybullet}
+	\item \textbf{Scholarships}
+	\begin{mybullet}
+           \item SpringSoft EDA Scholarship for ICCAD Regular Papers  \myrightdate{2007, 2009}
+           \item SpringSoft EDA Scholarship for DAC Regular Papers  \myrightdate{2008}
+         \end{mybullet}
+\end{myexp}
+
+%\newpage
+%\myscitem{Course Projects}
+%\begin{myitemize}
+%\item Bounded Model Checker \\
+%Implemented a tool that verifies the equivalence between two circuits within bounded timeframes
+%\item Risk Analyzer for dense-time systems\\
+%Implemented a backward reachability analyzer for dense-time systems
+%\item Chip Floorplanning \\
+%Implemented a B*-tree based floorplanner that can handle hard macros
+%\item Combinational Circuit Diagnosis \\
+%Implemented a dynamic cause-effect diagnosis tool that eliminates unwanted fault candidates
+%\end{myitemize}
+
+
+
+%\myscitem{Standardized Test Scores}
+%\begin{myexp}
+%   \item \textbf{GRE:} 1140 (Q: 790, V: 350, AWA: 2.5) \myrightdate{June 2009}
+%   \item \textbf{TOEFL:} 82 (Reading: 29, Listening: 17, Speaking: 15, Writing: 21) \myrightdate
+%{October 2009}
+%\end{myexp}
+
+\myscitem{Computer Skills}
+\begin{myitemize}
+%\item 4+ years of experience in logic synthesis and verification: knowledgeable in state-of-the-art algorithms such as Neural Network, Support Vector Machine, and Adaptive Boosting and capable of designing  new ones for specific applications
+\item Programming Languages: C/C++, Java, C\#, perl, UNIX shell script, Verilog
+%\item VLSI CAD Packages: ABC, SIS, MiniSat
+\item Operating Systems: Mac OS X, Linux, FreeBSD, SUN Solaris, Microsoft Windows
+\item Tools: MATLAB, \LaTeX
+\end{myitemize}
+
+
+%\myscitem{References}
+%\begin{myexp}
+%\item \textbf{Professor Jie-Hong Roland Jiang}\\
+%Professor of Graduate Institute of Electronics Engineering\\
+%National Taiwan University \\ \\
+%Address: Room 209, EE-II Building, National Taiwan University, Taipei, 106, Taiwan \\
+%Phone: +886-2-3366-3685 \\
+%Email:  \url{jhjiang@cc.ee.ntu.edu.tw} \\ \\
+%\textit{Advisor for M.S. study}
+%\end{myexp}
+\end{document}
+
