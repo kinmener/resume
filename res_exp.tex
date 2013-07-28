@@ -2,72 +2,65 @@
 \myscitem{Research Experience}
 
 \begin{myexp}
-\item \textbf{Research Assistant to Professor Vijay Garg, UT Austin}   \myrightdate{Aug.~2012 -- Present}
-  \begin{myexp}
+%\item \textbf{Research Assistant to Professor Vijay K. Garg, UT Austin}   \myrightdate{Aug.~2012 -- Present}
+    %\begin{myexp}
     \item Automatic-signal monitor 
-     \begin{mybullet}
-    \item Designed and implemented the framework of the automatic-signal monitor
-    \item Compared performances with explicit-signal monitor
-    \item Accepted by the {\it ACM SIGPLAN conference on Programming Language Design and Implementation (PLDI'13)}
+        \begin{mybullet}
+            \item Designed and implemented the framework of the automatic-signal
+                monitor in Java
+            \item Compared performances with explicit-signal monitor
+            %\item Accepted by the {\it ACM SIGPLAN conference on Programming Language Design and Implementation (PLDI'13)}
+        \end{mybullet}
+    %\end{myexp}
+%\item {\bf Research Project with Professor Michael Walfish,  UT Austin}  \myrightdate{Dec.~2010 -- May 2011}   
+    %\begin{myexp}
+    \item Failure detector in distributed systems       
+        \begin{mybullet}
+            \item Implemented the Falcon failure detector in Java
+            \item Evaluated the performances of the Falcon failure detector
+            %\item Published in the {\it ACM Symposium on Operating Systems Principles (SOSP'11)}
     \end{mybullet}
-   \end{myexp}
-\item {\bf Research Project with Professor Michael Walfish,  UT Austin}  \myrightdate{Dec.~2010 -- May 2011}   
-  \begin{myexp}
-    \item Failure detector in distributed systems       \begin{mybullet}
-    \item Implemented the Falcon failure detector in Java
-    \item Evaluated the performances of the Falcon failure detector
-     \item Published in the {\it ACM Symposium on Operating Systems Principles (SOSP'11)}
-     %\item Published in the {\it IEEE/ACM International Conference on Computer-Aided Design (ICCAD'09)}
-    \end{mybullet}
-    \end{myexp}
-% \item {\bf Research Project with Professor Emmett Witchel ,  The University of Texas at Austin} \\ \myrightdate{Sep.~2010 -- Jan.~2011}   
-%  \begin{myexp}
- %   \item Composing linked list operations without locks  
-%     \begin{mybullet}
-%    \item Designed and implemented an optimistic lock-free concurrent list in Java
-%    \item Compared performances with other lock and lock-free list implementations
-%    \end{mybullet}
-%    \end{myexp}
- 
-\item \textbf{Research Assistant to Professor Jie-Hong Jiang, National Taiwan University}   \myrightdate{May 2006 -- July 2010}
-  \begin{myexp}
-%    \item Quantified Boolean formula (QBF) Solver 
-%     \begin{mybullet}
-%    \item Designed and implemented the AIG-based QBF solver
-%    \item Compared performances with prior QBF solvers
-%  %  \item Taught graduate students programming tools
-%    \item Sponsored by the National Science Council, Taiwan
-%    \end{mybullet}
-    
-     \item Relation Determinization
+    %\end{myexp}
+%\item {\bf Research Project with Professor Emmett Witchel ,  The University of Texas at Austin} \\ \myrightdate{Sep.~2010 -- Jan.~2011}   
+    %\begin{myexp}
+    \item Composing linked list operations without locks  
+        \begin{mybullet}
+            \item Designed and implemented an optimistic lock-free concurrent list in Java
+            \item Compared performances with other lock and lock-free list implementations
+        \end{mybullet}
+%\end{myexp}
+%\item \textbf{Research Assistant to Professor Jie-Hong Jiang, National Taiwan University}   \myrightdate{May 2006 -- July 2010}
+%\begin{myexp}
+    \item Quantified Boolean formula (QBF) solver 
+        \begin{mybullet}
+            \item Designed and implemented the AIG-based QBF solver
+            \item Compared performances with prior QBF solvers
+            %\item Taught graduate students programming tools
+            %\item Sponsored by the National Science Council, Taiwan
+        \end{mybullet}
+    \item Relation determinization
     %Boolean relations are an important tool in system synthesis and verification. They can characterize solutions to a set of Boolean constraints. However, for hardware implement of a system, a deterministic function often has to be extracted from a relation. Prior methods focused on function optimization but were unlikely to handle large problem instances. We focused on scalability with reasonable optimization quality. The results showed that Boolean relations with thousands of variables can be determinized inexpensively using Craig Interpolation. With such extended capacity, we would anticipate real-world applications. Published in the {\it IEEE/ACM International Conference on Computer-Aided Design (ICCAD'09)}.
-    \begin{mybullet}
-    \item Designed and implemented the SAT-based algorithm to extract functions from relation
-    \item Prepared real state transition relation benchmark circuits
-    \item Published in the {\it IEEE/ACM International Conference on Computer-Aided Design (ICCAD'09)}
-    \end{mybullet}
-    
-    \item Boolean Function Bi-Decomposition
+        \begin{mybullet}
+            \item Designed and implemented the SAT-based algorithm to extract functions from relation
+            \item Prepared real state transition relation benchmark circuits
+            %\item Published in the {\it IEEE/ACM International Conference on Computer-Aided Design (ICCAD'09)}
+        \end{mybullet}
+    \item Boolean function bi-decomposition
     %Boolean function bi-decomposition is a fundamental operation in logic synthesis. Finding such decomposition reduces circuit complexity and yields simple physical design solutions. Prior methods may not be able to decompose large functions. We proposed a novel solution to these difficulties using Craig Interpolation and SAT Solving. The experiments showed promising results on the scalability of bi-decomposition. Thereby the capacity of bi-decomposition can be much extended for large functions. Published in the {\it Design Automation Conference (DAC'08)}.
-    \begin{mybullet}
-    \item Implemented the algorithm of computing Craig Interpolant
-    \item Evaluated the scalability of bi-decomposition and the optimality of variable partition
-    \item Published in the {\it ACM/IEEE Design Automation Conference (DAC'08)}
-    \end{mybullet}
-   
-    
-    \item Sequential Circuit Verification
+        \begin{mybullet}
+            \item Implemented the algorithm of computing Craig Interpolant
+            \item Evaluated the scalability of bi-decomposition and the optimality of variable partition
+            %\item Published in the {\it ACM/IEEE Design Automation Conference (DAC'08)}
+        \end{mybullet}
+    \item Sequential circuit verification
     %Retiming and resynthesis are among the most important techniques for practical sequential circuit optimization. However, their applicability is much limited due to verification concerns. To overcome this bottleneck, we studied both the theoretical and practical aspects of inductive verification on the equivalence between circuits under retiming and resynthesis transformation. Through the study of its completeness condition, we extended the verification capability and capacity. Our results overcome part of the verification bottleneck in logic synthesis. Published in the {\it IEEE/ACM International Conference on Computer-Aided Design (ICCAD'07)}.
-    \begin{mybullet}
-    \item Designed and implemented the SAT-based inductive equivalence checking algorithm
-    \item Compared performances with prior BDD-based method and temporal induction method
-    \item Published in the {\it IEEE/ACM International Conference on Computer-Aided Design (ICCAD'07)}
-    \end{mybullet}
-    
-  \end{myexp}
-
-%  {\bf Undergraduate Research Assistant to Professor Yi-Ping Hung }  \myrightdate{July 2005 -- June 2006} 
-  
+        \begin{mybullet}
+            \item Designed and implemented the SAT-based inductive equivalence checking algorithm
+            \item Compared performances with prior BDD-based method and temporal induction method
+            %\item Published in the {\it IEEE/ACM International Conference on Computer-Aided Design (ICCAD'07)}
+        \end{mybullet}
+%\end{myexp}
+%{\bf Undergraduate Research Assistant to Professor Yi-Ping Hung }  \myrightdate{July 2005 -- June 2006} 
 %  \begin{myexp}
 %      \item Human-Computer Interaction
 %        \begin{mybullet}
