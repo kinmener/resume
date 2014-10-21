@@ -1,0 +1,31 @@
+Wei-Lun Hung
+2501 Lake Austin Blvd. Apt. E110
+Austin, TX 78703
+(512)660-3468
+wlhung@utexas.edu
+
+
+To whom it may concern, 
+
+I am interested in the intern-Technical position. I have much related 
+experience and capabilities. I would appreciate your consideration for this job 
+opening.
+
+I am interested in the distributed systems and the concurrent programming. 
+Thus, I took some relative courses, such as distributed computing, distributed 
+systems, multicore computing, and software multicore processor. In addition, I 
+am also familiar with software engineering. I am the teaching assistant for
+software engineering and design laboratory and the design patterns.  
+Furthermore, I have extensive programming experience. I severed as an 
+intern for Intel to develop a framework for gate-level engineering change order 
+in C/C++. I was an IT officer when I fulfilled the mandatory military service.
+I led a team to design and develop web service to manage the information of
+office in duty. I was also a part-time website developer when I was a college 
+student. I designed and implemented a platform for students and companies to
+match jobs and requirements.
+
+I appreciate your taking the time to review my credentials and experience.
+Again, thank you for your consideration.
+
+Sincerely,
+Wei-Lun Hung
